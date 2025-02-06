@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Seo from "../components/seo"
 import RecommendedPosts from "../components/RecommendedPosts"
+import Comments from "../components/Comments"
 import * as S from "../components/Post/styled"
 
 const BlogPost = ({ data, pageContext }) => {
@@ -25,6 +26,7 @@ const BlogPost = ({ data, pageContext }) => {
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
       </S.MainContent>
       <RecommendedPosts next={next} previous={previous} />
+      <Comments url={post.fields.slug} title={post.frontmatter.title} />
     </Layout>
   )
 }
