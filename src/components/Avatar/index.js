@@ -4,21 +4,19 @@ import { getImage } from "gatsby-plugin-image"
 import * as S from "./styled"
 
 const Avatar = () => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        avatarImage: file(relativePath: { eq: "photo-profile.jpg" }) {
-          childImageSharp {
-            gatsbyImageData(
-              layout: CONSTRAINED
-              width: 60
-              placeholder: TRACED_SVG
-            )
-          }
+  const data = useStaticQuery(graphql`
+    query {
+      avatarImage: file(relativePath: { eq: "photo-profile.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(
+            layout: CONSTRAINED
+            width: 60
+            placeholder: TRACED_SVG
+          )
         }
       }
-    `
-  )
+    }
+  `)
 
   console.log(data)
 

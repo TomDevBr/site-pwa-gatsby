@@ -25,7 +25,7 @@ const flatten = arr =>
   arr.map(({ node: { frontmatter, ...rest } }) => ({
     ...frontmatter,
     date_timestamp: parseInt(
-      (new Date(frontmatter.date_timestamp).getTime() / 1000).toFixed(0)
+      (new Date(frontmatter.date_timestamp).getTime() / 1000).toFixed(0),
     ),
     ...rest,
   }))
