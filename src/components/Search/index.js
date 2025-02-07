@@ -1,6 +1,6 @@
-import { algoliasearch } from "algoliasearch"
 import React from "react"
 
+import { algoliasearch } from "algoliasearch"
 import { InstantSearch, SearchBox, Hits, Stats } from "react-instantsearch"
 
 import Hit from "./Hit"
@@ -13,7 +13,7 @@ const Search = ({ algolia }) => {
     <S.SearchWrapper>
       <InstantSearch searchClient={searchClient} indexName={algolia.indexName}>
         {/* eslint-disable-next-line jsx-a11y/no-autofocus */}
-        <SearchBox autoFocus translations={{ placeholder: "Pesquisar..." }} />
+        <SearchBox autoFocus placeholder="Pesquisar..." />
         <Stats
           translations={{
             stats(nbHits, timeSpentMs) {
