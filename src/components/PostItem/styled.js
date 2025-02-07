@@ -35,7 +35,7 @@ export const PostItemTag = styled.div`
   background: ${props =>
     props.background ? props.background : "var(--highlight)"};
   border-radius: 50%;
-  color: var(--white);
+  color: #fff;
   display: flex;
   font-size: 1.3rem;
   font-weight: 700;
@@ -53,11 +53,6 @@ export const PostItemInfo = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 1.5rem;
-
-  body#grid & {
-    line-height: 1.1;
-    margin: 0.8rem 0;
-  }
 `
 
 export const PostItemDate = styled.time`
@@ -68,6 +63,11 @@ export const PostItemTitle = styled.h1`
   font-size: 1.6rem;
   font-weight: 700;
   margin: 0.2rem 0 0.5rem;
+
+  body#grid & {
+    line-height: 1.1;
+    margin: 0.8rem 0;
+  }
 `
 
 export const PostItemDescription = styled.p`
