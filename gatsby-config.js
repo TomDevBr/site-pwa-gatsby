@@ -8,7 +8,7 @@ module.exports = {
     position: `Backend Developer`,
     description: `A blog about backend development and other cool stuff.`,
     author: `@myblog`,
-    siteUrl: `https://johndoe.com.br`,
+    siteUrl: `https://wondrous-yeot-079e7c.netlify.app`,
   },
   flags: {
     DEV_SSR: true,
@@ -90,5 +90,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify-cms`,
   ],
 }
