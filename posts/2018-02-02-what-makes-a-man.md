@@ -18,15 +18,15 @@ import MenuLinks from "../MenuLinks"
 
 import * as S from "./styled"
 
-const Sidebar = () => (
-  <S.SidebarWrapper>
+const SideBar = () => (
+  <S.SideBarWrapper>
     <Profile />
     <SocialLinks />
     <MenuLinks />
-  </S.SidebarWrapper>
+  </S.SideBarWrapper>
 )
 
-export default Sidebar
+export default SideBar
 ```
 
 Fusce a metus eu diam varius congue nec nec sapien. Vestibulum orci tortor, sollicitudin ac euismod non, placerat ac augue. Nunc convallis accumsan justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec malesuada vehicula lectus, viverra sodales ipsum gravida nec.
